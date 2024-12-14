@@ -21,7 +21,7 @@ export const addFeatureImage = createAsyncThunk(
   "/order/addFeatureImage",
   async (image) => {
     const response = await axios.post(
-      `http:///api/common/feature/add`,
+      `${import.meta.env.VITE_API_URL}/api/common/feature/add`,
       { image }
     );
 
